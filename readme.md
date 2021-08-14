@@ -8,5 +8,5 @@ En la siguiente tabla se muestran las actividades, tiempo estimado y utilizado e
 
 | Actividad                            | Tiempo estimado (hrs) | Tiempo utilizado (hrs) |
 | ------------------------------------ | --------------------- | ---------------------- |
-| Lectura y comprensión del documento. | 2.5                     |                        |
+| Lectura y comprensión del documento. | 2.5                   | 2                      |
 
