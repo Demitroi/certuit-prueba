@@ -4,5 +4,9 @@ Repositorio de la prueba técnica de Certuit de Sergio Contreras.
 
 #### Planeación
 
-Antes de hacer la planeación comencé a dar lectura al documento proporcionado para tener mejor contexto de la problemática.
+En la siguiente tabla se muestran las actividades, tiempo estimado y utilizado en horas.
+
+| Actividad                            | Tiempo estimado (hrs) | Tiempo utilizado (hrs) |
+| ------------------------------------ | --------------------- | ---------------------- |
+| Lectura y comprensión del documento. | 2.5                     |                        |
 
