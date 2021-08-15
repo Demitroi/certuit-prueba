@@ -10,7 +10,8 @@ En la siguiente tabla se muestran las actividades, tiempo estimado y utilizado e
 | ------------------------------------ | --------------------- | ---------------------- |
 | Lectura y comprensión del documento. | 2.5                   | 3                      |
 | Diseñar las pantallas.               | 4                     | 6.5                    |
-| Diseñar el esquema se base de datos. | 5                     |                        |
+| Diseñar esquema de base de datos.    | 5                     | 4.5                    |
+| Diseñar api rest.                    | 2                     |                        |
 
 
 #### Lectura y comprensión del documento.
@@ -21,7 +22,7 @@ En el flujo, el actor debe ingresar a la opción generar presupuesto, en el cual
 
 Una vez completado el formulario, el sistema hace los cálculos de acuerdo a las reglas de negocio, genera la vista previa que incluye los datos generales de viaje, itinerario, costos de combustible, peajes, viáticos y costo total.
 
-#### Diseñar las pantallas.
+#### Diseñar las pantallas (mockups).
 
 Para tener una visión mas clara del sistema, el siguiente paso es maquetar, para esto se utilizo la app de [Figma](https://www.figma.com) y el editable se puede [descargar aquí](mockups/editable.fig).
 
@@ -72,3 +73,22 @@ Los viajes pueden ser de una dirección o redondos, se crearon dos pantallas par
 **Vista Previa Presupuesto:** Presenta los datos del presupuesto de viaje completados y lo guarda.
 
 ![Vista Previa Presupuesto](mockups/Vista%20Previa%20Presupuesto.png)
+
+#### Diseñar esquema de base de datos.
+
+El esquema define la forma lógica en la que almacena la información del sistema, a continuación se muestran las relaciones de las tablas y su descripción. También se ha utilizado [Figma](https://www.figma.com) y el editable se puede [descargar aquí](db_schema/editable.fig).
+
+**Catálogo de Usuarios:** Almacena los usuarios del sistema, el historial de accesos y hay una tabla adicional de configuraciones para definir el salario mínimo.
+
+![Usuarios](db_schema/Usuarios.png)
+
+**Presupuestos:** Historial de presupuestos generados, contiene el tipo de viaje, las rutas, número de pasajeros, costos, y las fechas de ida y vuelta, unidades de transporte utilizadas y el itinerario.
+
+![Presupuestos](db_schema/Presupuestos.png)
+
+**Catálogo de Rutas:** Son las rutas disponibles para los presupuestos de viaje, se pueden filtrar por municipio y tiene un nombre. Están relacionados a sus destinos que tienen nombre, kilómetros, tiempo en minutos. Los destinos pueden o no tener casetas, estas tienen un nombre y tarifas para cada tipo de transporte.
+
+![Rutas](db_schema/Rutas.png)
+
+**Catálogo de Unidades de Transporte:** Vehículos designados para el transporte de viajeros, sus datos incluyen su nombre, placas, tipo de transporte, tipo de combustible y la capacidad de pasajeros. Estos últimos están relacionados a la tabla de combustibles, la cual contiene su nombre y el precio por litro.
+  
