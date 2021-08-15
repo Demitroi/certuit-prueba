@@ -91,4 +91,5 @@ El esquema define la forma lógica en la que almacena la información del sistem
 ![Rutas](db_schema/Rutas.png)
 
 **Catálogo de Unidades de Transporte:** Vehículos designados para el transporte de viajeros, sus datos incluyen su nombre, placas, tipo de transporte, tipo de combustible y la capacidad de pasajeros. Estos últimos están relacionados a la tabla de combustibles, la cual contiene su nombre y el precio por litro.
-  
+
+![Unidades de Transporte](db_schema/Unidades%20de%20Transporte.png)
