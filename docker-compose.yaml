@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+
+  db:
+    image: mariadb:10.2.40-bionic
+    ports:
+      - 7601:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: super_ultra_secreto
+    volumes:
+      - db:/var/lib/mysql
+      - ./database/:/docker-entrypoint-initdb.d/
+
+volumes:
+  db:
