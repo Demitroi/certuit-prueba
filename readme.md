@@ -496,4 +496,4 @@ Ejemplo response exitoso (200).
         }
     ]
 }
-``
+```
