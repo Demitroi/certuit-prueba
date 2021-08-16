@@ -394,7 +394,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 -- Dumping data for table presupuestos_viaje.usuarios: ~1 rows (approximately)
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
 INSERT INTO `usuarios` (`id`, `usuario`, `correo`, `pswd_checksum`, `creado`, `actualizado`) VALUES
-	(1, 'sergio', 'sergio950607@gmail.com', '7ecc6949e7e2590c93c7c94b1102d9ed2ae414f701c9f141f15d0dc3504fc3f3', '2021-08-15 19:11:40', '2021-08-15 19:11:42');
+	(1, 'sergio', 'sergio950607@gmail.com', '36033babfb48ec64e197c97fb40d65e6c79f81e04c61aeccef3009e01645ab8d', '2021-08-15 19:11:40', '2021-08-15 19:11:42');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 
 -- Dumping structure for table presupuestos_viaje.usuarios_accesos

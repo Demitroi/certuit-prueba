@@ -1,13 +1,18 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"log"
+
+	"github.com/Demitroi/certuit-prueba/db"
+	"github.com/Demitroi/certuit-prueba/routes"
+)
 
 func main() {
-	r := gin.Default()
-	r.GET("/api", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "hello",
-		})
-	})
-	r.Run()
+	// Inicializar conexión
+	err := db.SetUpDatabase()
+	if err != nil {
+		log.Fatal(err)
+	}
+	r := routes.SetupRoutes()
+	panic(r.Run())
 }
