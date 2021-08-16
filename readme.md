@@ -13,7 +13,8 @@ En la siguiente tabla se muestran las actividades, tiempo estimado y utilizado e
 | Diseñar esquema de base de datos.    | 5                     | 4.5                    |
 | Diseñar api rest.                    | 2                     | 3                      |
 | Preparar base de datos para pruebas. | 5                     | 5                      |
-| Preparar entorno de desarrollo.      | 2                     |                        |
+| Preparar entorno de desarrollo.      | 2                     | 1                      |
+| Desarrollo api.                      | 6                     |                        |
 
 
 #### Lectura y comprensión del documento.
