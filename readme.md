@@ -500,3 +500,7 @@ Ejemplo response exitoso (200).
     ]
 }
 ```
+
+#### Preparar entorno de desarrollo.
+
+Se utilizo [docker](https://www.docker.com/) para preparar el entorno rapidamente, la definición del entorno se encuentra en el archivo [docker-compose.yaml](docker-compose.yaml).
