@@ -11,6 +11,7 @@ func GetUsuario(u string) (*model.Usuario, error) {
 	if err != nil {
 		return nil, err
 	}
+	defer rows.Close()
 	var user model.Usuario
 	err = scanner.Scan(rows, &user)
 	if err != nil {

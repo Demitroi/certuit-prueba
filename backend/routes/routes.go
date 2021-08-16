@@ -30,10 +30,12 @@ func SetupRoutes() *gin.Engine {
 			c.Next()
 		})
 		{
+			// Obtiene información del usuario
 			auth.GET("sesion", func(c *gin.Context) {
 				usuario, _ := c.Get("usuario")
 				c.JSON(200, usuario)
 			})
+			auth.GET("rutas", controllers.ListRutas)
 		}
 	}
 	return r
