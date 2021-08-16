@@ -12,6 +12,7 @@ En la siguiente tabla se muestran las actividades, tiempo estimado y utilizado e
 | Diseñar las pantallas.               | 4                     | 6.5                    |
 | Diseñar esquema de base de datos.    | 5                     | 4.5                    |
 | Diseñar api rest.                    | 2                     | 3                      |
+| Preparar entorno de desarrollo.      | 2                     |                        |
 
 
 #### Lectura y comprensión del documento.
