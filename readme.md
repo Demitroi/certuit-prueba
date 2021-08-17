@@ -14,7 +14,8 @@ En la siguiente tabla se muestran las actividades, tiempo estimado y utilizado e
 | Diseñar api rest.                    | 2                     | 3                      |
 | Preparar base de datos para pruebas. | 5                     | 5                      |
 | Preparar entorno de desarrollo.      | 2                     | 1                      |
-| Desarrollo api.                      | 6                     |                        |
+| Desarrollo api.                      | 10                    | 4 (sin completar)      |
+| Desarrollo frontend.                 | 10                    |                        |
 
 
 #### Lectura y comprensión del documento.
