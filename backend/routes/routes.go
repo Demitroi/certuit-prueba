@@ -37,6 +37,7 @@ func SetupRoutes() *gin.Engine {
 			})
 			auth.GET("rutas", controllers.ListRutas)
 			auth.GET("rutas/:id", controllers.GetRuta)
+			auth.GET("unidades", controllers.GetUnidades)
 		}
 	}
 	return r

@@ -353,8 +353,8 @@ INSERT INTO `rutas_destinos` (`id`, `id_ruta`, `id_destino`, `creado`, `actualiz
 	(27, 4, 5, '2021-08-15 21:57:44', '2021-08-15 21:57:45');
 /*!40000 ALTER TABLE `rutas_destinos` ENABLE KEYS */;
 
--- Dumping structure for table presupuestos_viaje.unidaides_transporte
-CREATE TABLE IF NOT EXISTS `unidaides_transporte` (
+-- Dumping structure for table presupuestos_viaje.unidades_transporte
+CREATE TABLE IF NOT EXISTS `unidades_transporte` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `id_combustible` int(10) unsigned NOT NULL,
   `nombre` varchar(256) NOT NULL,
@@ -368,15 +368,15 @@ CREATE TABLE IF NOT EXISTS `unidaides_transporte` (
   CONSTRAINT `fk_id_combustible` FOREIGN KEY (`id_combustible`) REFERENCES `combustibles` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
--- Dumping data for table presupuestos_viaje.unidaides_transporte: ~5 rows (approximately)
-/*!40000 ALTER TABLE `unidaides_transporte` DISABLE KEYS */;
-INSERT INTO `unidaides_transporte` (`id`, `id_combustible`, `nombre`, `placas`, `tipo_transporte`, `cap_pasajeros`, `creado`, `actualizado`) VALUES
+-- Dumping data for table presupuestos_viaje.unidades_transporte: ~5 rows (approximately)
+/*!40000 ALTER TABLE `unidades_transporte` DISABLE KEYS */;
+INSERT INTO `unidades_transporte` (`id`, `id_combustible`, `nombre`, `placas`, `tipo_transporte`, `cap_pasajeros`, `creado`, `actualizado`) VALUES
 	(1, 1, 'Camión Verde', 'A1', '6', 40, '2021-08-15 20:18:15', '2021-08-15 20:18:16'),
 	(2, 1, 'Camión Rojo', 'A2', '6', 40, '2021-08-15 20:18:15', '2021-08-15 20:18:16'),
 	(3, 1, 'Camión Amarillo', 'A3', '6', 40, '2021-08-15 20:18:15', '2021-08-15 20:18:16'),
 	(4, 3, 'Camión Negro', 'A3', '8', 40, '2021-08-15 20:18:15', '2021-08-15 20:18:16'),
 	(5, 3, 'Camión Blanco', 'A3', '8', 40, '2021-08-15 20:18:15', '2021-08-15 20:18:16');
-/*!40000 ALTER TABLE `unidaides_transporte` ENABLE KEYS */;
+/*!40000 ALTER TABLE `unidades_transporte` ENABLE KEYS */;
 
 -- Dumping structure for table presupuestos_viaje.usuarios
 CREATE TABLE IF NOT EXISTS `usuarios` (
